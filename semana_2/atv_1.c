@@ -10,44 +10,25 @@
 #include <stdio.h>
 #include <math.h>
 
-#define IR 27.5
+int main()
+{
+    float capital, juros, valorTotal, lucroBruto;
+    int meses;
 
-int main() {
+    printf("Capital: ");
+    scanf("%f", &capital);
 
-    //Declaração de variáveis
-    float valorInicial;
-    int qntMeses;
-    float juros;
-    float lucroBruto, totalBruto;
-
-    //Entrada de dados
-    printf("Insira o valor inicial do investimento: ");
-    scanf("%f", &valorInicial);
-
-    printf("Quantidade de meses de investimento: ");
-    scanf("%d", &qntMeses);
-
-    printf("Insira o juros anual do investimento: ");
+    printf("Juros: ");
     scanf("%f", &juros);
 
-    // Processamento
-    // M = C (1+i)^t 
-    juros = juros/100;
-    totalBruto = valorInicial * pow((1+ juros), qntMeses);
-    lucroBruto = totalBruto - valorInicial;
+    printf("Meses: ");
+    scanf("%d", &meses);
 
-    printf("O total e: %f\n", totalBruto);
-    printf("O lucro bruto foi de: %.2f\n", lucroBruto);
+    juros = juros / 100;
+    valorTotal = capital * pow((1 + juros), meses);
+    lucroBruto = valorTotal - capital;
 
-    // Etapa 2 - Processamento
-    // Calcule o lucro líquido e total liquido após o importo retido na fonte / IR = 27.5
-    
-    float imposto = lucroBruto * (IR/100);
-    float lucroLiquido = lucroBruto - imposto;
-    float totalLiquido = valorInicial + lucroLiquido;
-
-    printf("Total liquido: %.2f\n", totalLiquido);
-    printf("Lucro Liquido: %.2f", lucroLiquido);
+    printf("%.2f --- %.2f", valorTotal, lucroBruto);
 
     return 0;
 }
