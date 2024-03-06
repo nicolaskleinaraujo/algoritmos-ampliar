@@ -8,19 +8,19 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
+int main()
+{
+    float peso, altura, imc;
+    char nome[20];
 
-    float altura, peso, imc;
-    char nome[10];
-
-    printf("Insira o nome: ");
+    printf("Informe seu nome: ");
     scanf("%s", nome);
 
-    printf("Insira a altura em metros: ");
-    scanf("%f", &altura);
-
-    printf("Insira o peso em Kg: ");
+    printf("Informe seu peso em Kg: ");
     scanf("%f", &peso);
+
+    printf("Informe sua altura em metros: ");
+    scanf("%f", &altura);
 
     imc = peso / pow(altura, 2);
 
