@@ -7,8 +7,7 @@ Então, escreva na tela o nome e a média do aluno.
 
 int main() {
 
-    float n1;
-    float n2, result;
+    float n1, n2, result;
     char aluno[10];
 
     printf("Insira o nome do aluno: ");
