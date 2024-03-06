@@ -1,24 +1,21 @@
 /*
-Faça um programa que receba um número inteiro.
-Como saí­da, deverá exibir na tela se é par ou í­mpar.
+Faï¿½a um programa que receba um nï¿½mero inteiro.
+Como saï¿½ï¿½da, deverï¿½ exibir na tela se ï¿½ par ou ï¿½ï¿½mpar.
 */
 
 #include <stdio.h>
 
 int main () {
-
     int numero;
 
-    printf("Insira um numero inteiro: ");
-    scanf("%d",&numero);
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
 
     if (numero % 2 == 0) {
-        printf("Par");
+        printf("Numero par");
+    } else {
+        printf("Numero impar");
     }
-    else {
-        printf("Impar");
-    }
-
+    
     return 0;
-
 }
