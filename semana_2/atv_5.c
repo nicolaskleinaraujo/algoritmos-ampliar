@@ -13,7 +13,7 @@ int main(){
         printf("Digite um numero que nn seja 0: ");
         scanf("%d", &num);
         cont += num;
-    } while (num >= 0);
+    } while (num > 0);
 
     printf("%d", cont);
 
