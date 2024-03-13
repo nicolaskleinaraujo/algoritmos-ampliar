@@ -7,7 +7,7 @@
 
 int main()
 {
-    int idade, menor, maior;
+    int idade, menor, maior = 0;
 
     for (int indice = 1; indice <= 6; indice++)
     {
@@ -33,24 +33,26 @@ int main()
         }
     }
 
-    printf("Maior idade: %d\n", maior);
     if (maior >= 18)
     {
-        printf("Ja é maior de idade!\n");
+        printf("Maior idade: %d\n", maior);
+        printf("Ja e maior de idade!\n\n");
     }
     else
     {
-        printf("Ainda é menor de idade!\n");
+        printf("Maior idade: %d\n", maior);
+        printf("Ainda e menor de idade!\n\n");
     }
 
-    printf("Menor idade: %d\n", menor);
     if (menor >= 18)
     {
-        printf("Ja é maior de idade!");
+        printf("Menor idade: %d\n", menor);
+        printf("Ja e maior de idade!");
     }
     else
     {
-        printf("Ainda é menor de idade!");
+        printf("Menor idade: %d\n", menor);
+        printf("Ainda e menor de idade!");
     }
 
     return 0;
